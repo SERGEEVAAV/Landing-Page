@@ -1,0 +1,59 @@
+.button {
+    @include font($size: 1.4rem, $height: 2.2rem, $weight: 600);
+    border-radius: 500px;
+    white-space: nowrap;
+    border: none;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+@include media-mobile {
+    @include font($size: 1.0rem, $height: 1.6rem, $weight: 600);
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    
+}
+ 
+}
+
+.button__colored_green {
+    padding: 14px 45px 14px 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 31px;
+    background-color: $color-green;
+    box-shadow: inset 0px 0px 22px rgba(255, 255, 255, 0.25);
+    cursor: pointer;
+    &:hover {
+        background-color: $color-lightgreen;
+    }
+    @include media-mobile {
+        // width: 276px;
+        margin-left: 0;
+        margin-bottom: 12px;
+        gap: 12px;
+    }
+
+}
+
+.button__colored_orange {
+    padding: 14px 57px 14px 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 33px;
+    background-color: $color-orange;
+    box-shadow: inset 0px 0px 22px rgba(255, 255, 255, 0.25);
+    cursor: pointer;
+    &:hover {
+        background-color: $color-lightorange;
+    }
+    @include media-mobile {
+        gap: 24px;
+        
+    }
+}

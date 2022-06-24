@@ -1,0 +1,25 @@
+.header__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 43px 0 37px 0;
+   
+    @include media-mobile {
+       padding: 0;
+    }
+    
+}
+.header__image {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    @include media-mobile {
+        display: none;
+        
+        
+        
+    }
+}  
+
+
+

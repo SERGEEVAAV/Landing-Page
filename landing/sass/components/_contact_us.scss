@@ -1,0 +1,114 @@
+
+hr {
+    opacity: 0.07;
+    margin: 0;
+    @include media-mobile {
+        display: none;
+    }
+}
+.contact-us_content {
+    width: 205px;
+    text-align: center;
+    @include media-mobile {
+        display: none;
+       
+    }
+}
+
+.contacnt-us_download {
+    display: flex;
+    justify-content: center;
+    gap: 17px;
+    @include media-mobile {
+        display: none;
+    }
+}
+.text_download {
+    @include font($size: 1.2rem, $height: 1.5rem, $weight: 600);
+    border-bottom: 2px dotted $color-green ;
+}
+.contact-us_social {
+    display: initial;
+
+    @include media-mobile {
+        display: none;
+    }
+}
+.social_click {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+.dot_green {
+    content: '';
+    width: 4px;
+    height: 4px;
+    // border-radius: 100px;
+    background-color: $color-green;
+}
+.contact-us_work {
+    text-align: center;
+    @include media-mobile {
+        z-index: 5;
+        padding-top: 10px;
+        
+    }
+}
+
+.contact-us_logo {
+    @include media-mobile {
+        z-index: 5;
+    }
+}
+.contact-us_image {
+    display: none;
+    @include media-mobile {
+        display: initial;
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        
+       
+        background-repeat: no-repeat;
+    background-size: auto;
+        // overflow: hidden;
+    }
+    
+}
+
+.contact-us__phone {
+    margin-top: 4px;
+    @include font ($size: 2.2rem, $height: 2.7rem, $weight: 600);
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: $color-link;
+    text-decoration: none;
+    @include media-mobile {
+        @include font ($size: 1.4rem, $height: 1.7rem, $weight: 600);
+    
+    }
+    
+    
+}
+
+.contact-us_name {
+    width: 105px;
+    @include font ($size: 1.2rem, $height: 1.5rem, $weight: 600);
+    letter-spacing: 0.04em;
+    color: $color-green;
+    border-bottom: 2px dotted $color-line;
+    margin: 0;
+    @include media-mobile {
+        @include font ($size: 1.0rem, $height: 1.2rem, $weight: 600);
+        letter-spacing: 0.04em;
+        border-bottom: 2px dotted $color-line;
+        width: 102px;
+        text-align: center;
+        color: $color-name;
+        margin: 0;
+
+    }
+   
+   
+}

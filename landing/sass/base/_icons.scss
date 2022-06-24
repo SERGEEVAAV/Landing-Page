@@ -1,0 +1,90 @@
+.ico {
+    cursor: pointer;
+    display: inline-block;
+}
+
+.icons {
+    display: flex;
+    gap: 14px;
+    @include media-mobile {
+        display: none;
+    }
+}
+.icon-square {
+    width: 44px;
+    height: 44px;
+    border-radius: 100px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    &_violet {
+        background-color: $color-violet;
+    }
+    &_green {
+        background-color: $color-green;
+    }
+   
+    &_blue {
+        background-color: $color-blue;
+    }
+    &_wihte {
+        background-color: $color-wihte;
+        box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.05);
+    }
+    &_orange {
+        background-color: $color-orange;
+        box-shadow: inset 0px 0px 22px rgba(255, 255, 255, 0.25);
+        margin-left: 28px;
+        float: right;
+    }
+}
+.ico_arrow {
+    background-image: url("../img/arrow.svg");
+    width: 21px;
+    height: 20px;
+}
+
+.ico_interview {
+    background-image: url("../img/interview.svg");
+    width: 26px;
+    height: 21px;
+    margin-right: 16px;
+}
+
+.ico_circles {
+    background-image: url("../img/circles.svg");
+    width: 58px;
+    height: 10px;
+    margin-right: 16px;
+}
+
+.ico_viber {
+    background-image: url("../img/viber.svg");
+    width: 20px;
+    height: 21px;
+}
+
+.ico_whatsApp {
+    background-image: url("../img/whatsApp.svg");
+    width: 21px;
+    height: 21px;
+}
+
+.ico_telegram {
+    background-image: url("../img/telegram.svg");
+    width: 18px;
+    height: 15px;
+}
+
+.ico_pdf {
+    background-image: url("../img/Pdf.svg");
+    width: 21px;
+    height: 10px;
+}
+
+.ico_plus {
+    background-image: url("../img/plus.svg");
+    width: 10px;
+    height: 10px;
+    
+}
