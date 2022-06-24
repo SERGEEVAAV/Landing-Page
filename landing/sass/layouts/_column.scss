@@ -1,0 +1,11 @@
+.layout-5-column {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    // margin-top: 36px;
+    @include media-mobile {
+        justify-content: space-evenly;
+        // gap: 10px;
+    }
+    
+}

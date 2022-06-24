@@ -1,0 +1,103 @@
+
+.promo__basic {
+    display: flex;
+    gap: 71px;
+   @include media-mobile {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 69px;
+   }
+    
+}
+
+.promo__text {
+    width: 234px;
+    @include font($size: 1.4rem, $height: 2.2rem, $weight: 400);
+    margin: 0;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: $color-text;
+
+
+@include media-mobile {
+    @include font($size: 0.8rem, $height: 1.2rem, $weight: 400);
+    text-align: center;
+    letter-spacing: 0.02em;
+}
+ 
+}
+
+.promo__content {
+    margin: 0;
+    max-width: 728px;
+    @include media-mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+       
+        align-items: center;
+        
+    }
+   
+    
+}
+.promo__title {
+    @include font($size: 5.5rem, $height: 8.5rem, $weight: 300);
+    color: $color-text;
+        @include media-mobile {
+            @include font($size: 1.8rem, $height: 3.0rem, $weight: 300);
+            width: 276px;
+            order: -2;
+            text-align: center;
+            color: $color-text;
+
+        }
+}
+.subtitle {
+    @include font($size: 3.2rem, $height: 3.9rem, $weight: 400);
+     color: $color-text;
+     @include media-mobile {
+        @include font($size: 1.3rem, $height: 1.6rem, $weight: 400);
+        text-align: center;
+        color: $color-text;
+        order: -2;
+        margin: 0;
+        }
+
+}
+.button__interactive {
+    display: flex;
+    margin-top: 38px;
+    @include media-mobile {
+        gap: 6px;
+        flex-direction: column;
+       order: -2;
+       align-items: center;
+       justify-content: center;
+       margin-top: 17px;
+       margin-bottom: 12px;
+    }
+}
+
+.button__promo {
+    display: flex;
+    >.button {
+        margin-left: 18px;
+        &:first-child {
+            margin-left: 18px;
+            margin-left: 0;
+        }
+    }
+    @include media-mobile {
+        >.button {
+            margin-left: 0;
+        }
+        display: block;
+        
+        align-items: center;
+       
+        
+        
+     }
+}

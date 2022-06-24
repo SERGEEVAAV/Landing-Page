@@ -1,0 +1,53 @@
+*{
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    overflow-x: hidden;
+    @include media-mobile {
+    overflow-x: hidden;
+    }
+   
+  }
+body {
+    @extend %font-add;
+    overflow-x: hidden;
+    @include media-mobile {
+       
+    overflow-x: hidden;
+    }
+    
+}
+h2 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 140%;
+}
+h3 {
+    
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.04em;
+    @include media-mobile {
+       
+font-weight: 300;
+font-size: 18px;
+line-height: 30px;
+    }
+    
+}
+h4 {
+    @include font ($size: 1.2rem, $height: 1.5rem, $weight: 400);
+    margin: 0;
+        @include media-mobile {
+            @include font ($size: 0.7rem, $height: 0.9rem, $weight: 400);
+            
+
+
+        letter-spacing: 0.02em;
+    }
+}
