@@ -4,9 +4,9 @@
 
 html {
     font-size: 10px;
-    overflow-x: hidden;
+    // overflow-x: hidden;
     @include media-mobile {
-    overflow-x: hidden;
+    // overflow-x: hidden;
     }
    
   }

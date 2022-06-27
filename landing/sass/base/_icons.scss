@@ -2,12 +2,15 @@
     cursor: pointer;
     display: inline-block;
 }
-
+.ico__1 {
+    position: relative;
+}
 .icons {
     display: flex;
     gap: 14px;
+    justify-content: center;
     @include media-mobile {
-        display: none;
+        // display: none;
     }
 }
 .icon-square {
@@ -19,13 +22,25 @@
     justify-content: center;
     &_violet {
         background-color: $color-violet;
+        transition: 1s;
+        &:hover {
+            transform: scale(1.2);
+        }
     }
     &_green {
         background-color: $color-green;
+        transition: 1s;
+        &:hover {
+            transform: scale(1.2);
+        }
     }
    
     &_blue {
         background-color: $color-blue;
+        transition: 1s;
+        &:hover {
+            transform: scale(1.2);
+        }
     }
     &_wihte {
         background-color: $color-wihte;
@@ -36,6 +51,9 @@
         box-shadow: inset 0px 0px 22px rgba(255, 255, 255, 0.25);
         margin-left: 28px;
         float: right;
+        &:active {
+            top: 3px;
+         }
     }
 }
 .ico_arrow {
@@ -62,6 +80,7 @@
     background-image: url("../img/viber.svg");
     width: 20px;
     height: 21px;
+   
 }
 
 .ico_whatsApp {

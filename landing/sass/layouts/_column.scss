@@ -2,10 +2,20 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    // margin-top: 36px;
+    
     @include media-mobile {
+        
         justify-content: space-evenly;
+        
         // gap: 10px;
     }
     
+}
+
+.layout-3-column {
+    @include media-mobile {
+        display: block;
+        text-align: center;
+        gap: 30px;
+    }
 }
